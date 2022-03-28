@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab05_form_input.html</title>
+</head>
+<body>
+    <!-- input --><!--data에대한 customize-->
+    <form action="" data-movie="">
+        텍스트를 입력하세요<br>
+        <input type="text">
+    </form>
+    <hr>
+    <!-- input : password -->
+    <!--보안->post-->
+    <form action="" method="post">
+        ID : <input type="text"><br>
+        PW : <input type="password">
+    </form>
+
+    <hr>
+
+    <!-- input : radio  -->
+    <!-- radio 둘 중 하나 선택, name필수적,value 가 전달하고자 하는 data값 백엔드로 넘어가서 처리-->
+    <form action="">
+        <input type="radio" name="gender" id="" value="m">남
+        <input type="radio" name="gender" id="" value="f">여
+    </form>
+    
+    <hr>
+    
+    <!--input : checkbox-->
+    <form action="">
+        <input type="checkbox" name="f-movie" value="horor"> 공포
+        <input type="checkbox" name="f-movie" value="docu"> 다큐
+        <input type="checkbox" name="f-movie" value="action"> 액션
+    </form>
+    <hr>
+    <!-- button -->
+    <button type="button">버튼</button>
+   
+    <hr>
+
+    <!-- input : submit -->
+    <form action="https://search.naver.com/search.naver?" target="_blank">
+        N : <input type="text" name="query"><!--url에서 ?query뒤에 text추가-->
+        <input type="submit">
+    </form>
+    <hr>
+    <!--select-->
+    <select name="grade" id="">
+        <option value="C">2500만원 이하</option>
+        <option value="B">3000만원 이하</option>
+        <option value="A">3500만원 이하</option>
+    </select>
+    <hr>
+    <!--video,control 필수,control의 옵션도 존재, loop,autoplay-->
+    <!--youtube에서도 쓰이는(f12->element로 확인)-->
+    <video src="/multimedia/TeachableMachine.mp4" controls autoplay></video>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
